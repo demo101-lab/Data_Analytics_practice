@@ -1,0 +1,5 @@
+PaymentMethod,Customers,Churned,ChurnRate
+Bank Transfer,3,0,0.0
+Credit Card,6,2,33.33333333333333
+Debit Card,2,2,100.0
+UPI,4,3,75.0
