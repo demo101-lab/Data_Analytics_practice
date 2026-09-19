@@ -1,0 +1,4 @@
+TenureBucket,Customers,Churned,ChurnRate
+Early (0–6m),4,4,100.0
+Mid (7–24m),7,3,42.857142857142854
+Long (25m+),4,0,0.0
