@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_66bade7b71d34cd0d3da1167e718296d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_66bade7b71d34cd0d3da1167e718296d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_66bade7b71d34cd0d3da1167e718296d = L.map(
+                "map_66bade7b71d34cd0d3da1167e718296d",
+                {
+                    center: [22.5, 79.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2c4494ff90d5ebb0b7fca6f2f7c251b7 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2c4494ff90d5ebb0b7fca6f2f7c251b7.addTo(map_66bade7b71d34cd0d3da1167e718296d);
+        
+    
+            var marker_cluster_f186b879c0235e846487a529058b02bf = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_8a53a847662a47355c56565a634c5ee7 = L.circleMarker(
+                [21.0, 79.0882],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.454545454545455, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_f186b879c0235e846487a529058b02bf);
+        
+    
+        var popup_f098b37ed6d6dfeba12d6f97d3e51419 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_01a7ee6b185cff08379240a23e53c580 = $(`<div id="html_01a7ee6b185cff08379240a23e53c580" style="width: 100.0%; height: 100.0%;"><b>Nagpur, Maharashtra</b><br>Postal Code: 440001<br>Users: 650<br>Orders: 120<br>Revenue: ₹1,850,000<br>Revenue/User: ₹2,846<br>Underserved Score: 481.08</div>`)[0];
+                popup_f098b37ed6d6dfeba12d6f97d3e51419.setContent(html_01a7ee6b185cff08379240a23e53c580);
+            
+        
+
+        circle_marker_8a53a847662a47355c56565a634c5ee7.bindPopup(popup_f098b37ed6d6dfeba12d6f97d3e51419)
+        ;
+
+        
+    
+    
+            circle_marker_8a53a847662a47355c56565a634c5ee7.bindTooltip(
+                `<div>
+                     Nagpur — ₹1.85M revenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eda74b641fb50b907da72787f2f4e3f6 = L.circleMarker(
+                [18.5204, 73.8567],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.151515151515152, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_f186b879c0235e846487a529058b02bf);
+        
+    
+        var popup_16644feebaa91086ee67d71e4282ace1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27ac75cab4ce9bebd95aa065e1a0b3e3 = $(`<div id="html_27ac75cab4ce9bebd95aa065e1a0b3e3" style="width: 100.0%; height: 100.0%;"><b>Pune, Maharashtra</b><br>Postal Code: 411001<br>Users: 1,200<br>Orders: 260<br>Revenue: ₹4,200,000<br>Revenue/User: ₹3,500<br>Underserved Score: 409.52</div>`)[0];
+                popup_16644feebaa91086ee67d71e4282ace1.setContent(html_27ac75cab4ce9bebd95aa065e1a0b3e3);
+            
+        
+
+        circle_marker_eda74b641fb50b907da72787f2f4e3f6.bindPopup(popup_16644feebaa91086ee67d71e4282ace1)
+        ;
+
+        
+    
+    
+            circle_marker_eda74b641fb50b907da72787f2f4e3f6.bindTooltip(
+                `<div>
+                     Pune — ₹4.20M revenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4c5f7d87c4f51f7c1c263425a1588a58 = L.circleMarker(
+                [20.011, 73.7903],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.787878787878788, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_f186b879c0235e846487a529058b02bf);
+        
+    
+        var popup_b5cfcdcbb0a8df5eda0edd0f56ad2fc1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f30a54d6a102d40ae026f2dff051adbe = $(`<div id="html_f30a54d6a102d40ae026f2dff051adbe" style="width: 100.0%; height: 100.0%;"><b>Nashik, Maharashtra</b><br>Postal Code: 422001<br>Users: 700<br>Orders: 150<br>Revenue: ₹2,400,000<br>Revenue/User: ₹3,429<br>Underserved Score: 416.67</div>`)[0];
+                popup_b5cfcdcbb0a8df5eda0edd0f56ad2fc1.setContent(html_f30a54d6a102d40ae026f2dff051adbe);
+            
+        
+
+        circle_marker_4c5f7d87c4f51f7c1c263425a1588a58.bindPopup(popup_b5cfcdcbb0a8df5eda0edd0f56ad2fc1)
+        ;
+
+        
+    
+    
+            circle_marker_4c5f7d87c4f51f7c1c263425a1588a58.bindTooltip(
+                `<div>
+                     Nashik — ₹2.40M revenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fdbad5fccf2204507f2755606570e817 = L.circleMarker(
+                [23.0225, 72.5714],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.545454545454547, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_f186b879c0235e846487a529058b02bf);
+        
+    
+        var popup_f554c1c0d53a15dd735351b8ec22b07e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a8da97d477e5b58a9c44e29ba7deff4f = $(`<div id="html_a8da97d477e5b58a9c44e29ba7deff4f" style="width: 100.0%; height: 100.0%;"><b>Ahmedabad, Gujarat</b><br>Postal Code: 380001<br>Users: 1,100<br>Orders: 240<br>Revenue: ₹3,950,000<br>Revenue/User: ₹3,591<br>Underserved Score: 400.00</div>`)[0];
+                popup_f554c1c0d53a15dd735351b8ec22b07e.setContent(html_a8da97d477e5b58a9c44e29ba7deff4f);
+            
+        
+
+        circle_marker_fdbad5fccf2204507f2755606570e817.bindPopup(popup_f554c1c0d53a15dd735351b8ec22b07e)
+        ;
+
+        
+    
+    
+            circle_marker_fdbad5fccf2204507f2755606570e817.bindTooltip(
+                `<div>
+                     Ahmedabad — ₹3.95M revenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ec96a8e34285357ead73d10ffd06dd3c = L.circleMarker(
+                [21.1702, 72.8311],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.606060606060606, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_f186b879c0235e846487a529058b02bf);
+        
+    
+        var popup_9bd130af3f62cc5d1e355e75e323fde7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac4059d95ca8187d7f39c1e51bc2441b = $(`<div id="html_ac4059d95ca8187d7f39c1e51bc2441b" style="width: 100.0%; height: 100.0%;"><b>Surat, Gujarat</b><br>Postal Code: 395003<br>Users: 900<br>Orders: 190<br>Revenue: ₹3,150,000<br>Revenue/User: ₹3,500<br>Underserved Score: 406.35</div>`)[0];
+                popup_9bd130af3f62cc5d1e355e75e323fde7.setContent(html_ac4059d95ca8187d7f39c1e51bc2441b);
+            
+        
+
+        circle_marker_ec96a8e34285357ead73d10ffd06dd3c.bindPopup(popup_9bd130af3f62cc5d1e355e75e323fde7)
+        ;
+
+        
+    
+    
+            circle_marker_ec96a8e34285357ead73d10ffd06dd3c.bindTooltip(
+                `<div>
+                     Surat — ₹3.15M revenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76d151fa3357497aa5621e512898e104 = L.circleMarker(
+                [12.9716, 77.5946],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.0, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_f186b879c0235e846487a529058b02bf);
+        
+    
+        var popup_639cf87de55bd136c9f77f0e80553d68 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f753f621a1c565615e9ec59e69811841 = $(`<div id="html_f753f621a1c565615e9ec59e69811841" style="width: 100.0%; height: 100.0%;"><b>Bengaluru, Karnataka</b><br>Postal Code: 560001<br>Users: 1,500<br>Orders: 340<br>Revenue: ₹6,200,000<br>Revenue/User: ₹4,133<br>Underserved Score: 351.61</div>`)[0];
+                popup_639cf87de55bd136c9f77f0e80553d68.setContent(html_f753f621a1c565615e9ec59e69811841);
+            
+        
+
+        circle_marker_76d151fa3357497aa5621e512898e104.bindPopup(popup_639cf87de55bd136c9f77f0e80553d68)
+        ;
+
+        
+    
+    
+            circle_marker_76d151fa3357497aa5621e512898e104.bindTooltip(
+                `<div>
+                     Bengaluru — ₹6.20M revenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ddc6d57a65ea9742db28c6d2a40acb04 = L.circleMarker(
+                [12.2958, 76.6394],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.96969696969697, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_f186b879c0235e846487a529058b02bf);
+        
+    
+        var popup_5d7130609d948b4a6f746e3e06af6850 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eda35acfa8f7e07ec62be30b95921bdf = $(`<div id="html_eda35acfa8f7e07ec62be30b95921bdf" style="width: 100.0%; height: 100.0%;"><b>Mysuru, Karnataka</b><br>Postal Code: 570001<br>Users: 500<br>Orders: 100<br>Revenue: ₹1,650,000<br>Revenue/User: ₹3,300<br>Underserved Score: 424.24</div>`)[0];
+                popup_5d7130609d948b4a6f746e3e06af6850.setContent(html_eda35acfa8f7e07ec62be30b95921bdf);
+            
+        
+
+        circle_marker_ddc6d57a65ea9742db28c6d2a40acb04.bindPopup(popup_5d7130609d948b4a6f746e3e06af6850)
+        ;
+
+        
+    
+    
+            circle_marker_ddc6d57a65ea9742db28c6d2a40acb04.bindTooltip(
+                `<div>
+                     Mysuru — ₹1.65M revenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_05e8c3442a695bd95f53beadf2ab1af0 = L.circleMarker(
+                [28.6139, 77.209],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.696969696969697, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_f186b879c0235e846487a529058b02bf);
+        
+    
+        var popup_eec2195b0d549053a1f8ce2e88c5616c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e158113704eb1f006488ccae3d7512c4 = $(`<div id="html_e158113704eb1f006488ccae3d7512c4" style="width: 100.0%; height: 100.0%;"><b>New Delhi, Delhi</b><br>Postal Code: 110001<br>Users: 1,000<br>Orders: 220<br>Revenue: ₹3,600,000<br>Revenue/User: ₹3,600<br>Underserved Score: 400.00</div>`)[0];
+                popup_eec2195b0d549053a1f8ce2e88c5616c.setContent(html_e158113704eb1f006488ccae3d7512c4);
+            
+        
+
+        circle_marker_05e8c3442a695bd95f53beadf2ab1af0.bindPopup(popup_eec2195b0d549053a1f8ce2e88c5616c)
+        ;
+
+        
+    
+    
+            circle_marker_05e8c3442a695bd95f53beadf2ab1af0.bindTooltip(
+                `<div>
+                     New Delhi — ₹3.60M revenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa46a1605bd85dc06fbb4a309ecce344 = L.circleMarker(
+                [22.5726, 88.3639],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.757575757575758, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_f186b879c0235e846487a529058b02bf);
+        
+    
+        var popup_66998c452ccde38a0d848db9b38d151b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6f79904b1c42cfb697e5d470d876168d = $(`<div id="html_6f79904b1c42cfb697e5d470d876168d" style="width: 100.0%; height: 100.0%;"><b>Kolkata, West Bengal</b><br>Postal Code: 700001<br>Users: 850<br>Orders: 170<br>Revenue: ₹2,800,000<br>Revenue/User: ₹3,294<br>Underserved Score: 425.00</div>`)[0];
+                popup_66998c452ccde38a0d848db9b38d151b.setContent(html_6f79904b1c42cfb697e5d470d876168d);
+            
+        
+
+        circle_marker_fa46a1605bd85dc06fbb4a309ecce344.bindPopup(popup_66998c452ccde38a0d848db9b38d151b)
+        ;
+
+        
+    
+    
+            circle_marker_fa46a1605bd85dc06fbb4a309ecce344.bindTooltip(
+                `<div>
+                     Kolkata — ₹2.80M revenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e29cebc6c5e43fb52e40628b4465d685 = L.circleMarker(
+                [13.0827, 80.2707],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.606060606060606, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_f186b879c0235e846487a529058b02bf);
+        
+    
+        var popup_6a34b4608fd4c96ac33579fb12ade9aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bee1a01f883cd48624dc0809dbea7068 = $(`<div id="html_bee1a01f883cd48624dc0809dbea7068" style="width: 100.0%; height: 100.0%;"><b>Chennai, Tamil Nadu</b><br>Postal Code: 600001<br>Users: 1,250<br>Orders: 280<br>Revenue: ₹4,800,000<br>Revenue/User: ₹3,840<br>Underserved Score: 377.08</div>`)[0];
+                popup_6a34b4608fd4c96ac33579fb12ade9aa.setContent(html_bee1a01f883cd48624dc0809dbea7068);
+            
+        
+
+        circle_marker_e29cebc6c5e43fb52e40628b4465d685.bindPopup(popup_6a34b4608fd4c96ac33579fb12ade9aa)
+        ;
+
+        
+    
+    
+            circle_marker_e29cebc6c5e43fb52e40628b4465d685.bindTooltip(
+                `<div>
+                     Chennai — ₹4.80M revenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d06e85a6c8ea28082733c7988f83e73d = L.circleMarker(
+                [26.9124, 75.7873],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.212121212121212, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_f186b879c0235e846487a529058b02bf);
+        
+    
+        var popup_c2dbac2e376feeebe281075700e826b8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a79302f7ef209324861735c495bf6f03 = $(`<div id="html_a79302f7ef209324861735c495bf6f03" style="width: 100.0%; height: 100.0%;"><b>Jaipur, Rajasthan</b><br>Postal Code: 302001<br>Users: 550<br>Orders: 115<br>Revenue: ₹1,750,000<br>Revenue/User: ₹3,182<br>Underserved Score: 445.71</div>`)[0];
+                popup_c2dbac2e376feeebe281075700e826b8.setContent(html_a79302f7ef209324861735c495bf6f03);
+            
+        
+
+        circle_marker_d06e85a6c8ea28082733c7988f83e73d.bindPopup(popup_c2dbac2e376feeebe281075700e826b8)
+        ;
+
+        
+    
+    
+            circle_marker_d06e85a6c8ea28082733c7988f83e73d.bindTooltip(
+                `<div>
+                     Jaipur — ₹1.75M revenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f11fb1666660e7b049af3f03bcbf5c65 = L.circleMarker(
+                [22.7196, 75.8577],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.696969696969697, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_f186b879c0235e846487a529058b02bf);
+        
+    
+        var popup_70f3503a7ff2ecf324f5ca2930a8df66 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c6d8a33518c16331353ea99e668371e = $(`<div id="html_7c6d8a33518c16331353ea99e668371e" style="width: 100.0%; height: 100.0%;"><b>Indore, Madhya Pradesh</b><br>Postal Code: 452001<br>Users: 600<br>Orders: 125<br>Revenue: ₹1,950,000<br>Revenue/User: ₹3,250<br>Underserved Score: 435.90</div>`)[0];
+                popup_70f3503a7ff2ecf324f5ca2930a8df66.setContent(html_7c6d8a33518c16331353ea99e668371e);
+            
+        
+
+        circle_marker_f11fb1666660e7b049af3f03bcbf5c65.bindPopup(popup_70f3503a7ff2ecf324f5ca2930a8df66)
+        ;
+
+        
+    
+    
+            circle_marker_f11fb1666660e7b049af3f03bcbf5c65.bindTooltip(
+                `<div>
+                     Indore — ₹1.95M revenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9351aa37f29dcd5a37a39f15e663107 = L.circleMarker(
+                [17.385, 78.4867],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.424242424242424, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_f186b879c0235e846487a529058b02bf);
+        
+    
+        var popup_e42dba65949dc1c2620c706a1fc1db3b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_785a170ed96e80dac60585657915d348 = $(`<div id="html_785a170ed96e80dac60585657915d348" style="width: 100.0%; height: 100.0%;"><b>Hyderabad, Telangana</b><br>Postal Code: 500001<br>Users: 1,050<br>Orders: 230<br>Revenue: ₹3,900,000<br>Revenue/User: ₹3,714<br>Underserved Score: 387.18</div>`)[0];
+                popup_e42dba65949dc1c2620c706a1fc1db3b.setContent(html_785a170ed96e80dac60585657915d348);
+            
+        
+
+        circle_marker_d9351aa37f29dcd5a37a39f15e663107.bindPopup(popup_e42dba65949dc1c2620c706a1fc1db3b)
+        ;
+
+        
+    
+    
+            circle_marker_d9351aa37f29dcd5a37a39f15e663107.bindTooltip(
+                `<div>
+                     Hyderabad — ₹3.90M revenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a1145a15abc926be2b2d6633b78fb8a3 = L.circleMarker(
+                [26.8467, 80.9462],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.666666666666666, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_f186b879c0235e846487a529058b02bf);
+        
+    
+        var popup_bda8b274b2def678d8a19b07f40fd6f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cdaa4ffb759b35fc121ac17254ebd059 = $(`<div id="html_cdaa4ffb759b35fc121ac17254ebd059" style="width: 100.0%; height: 100.0%;"><b>Lucknow, Uttar Pradesh</b><br>Postal Code: 226001<br>Users: 750<br>Orders: 155<br>Revenue: ₹2,350,000<br>Revenue/User: ₹3,133<br>Underserved Score: 451.06</div>`)[0];
+                popup_bda8b274b2def678d8a19b07f40fd6f5.setContent(html_cdaa4ffb759b35fc121ac17254ebd059);
+            
+        
+
+        circle_marker_a1145a15abc926be2b2d6633b78fb8a3.bindPopup(popup_bda8b274b2def678d8a19b07f40fd6f5)
+        ;
+
+        
+    
+    
+            circle_marker_a1145a15abc926be2b2d6633b78fb8a3.bindTooltip(
+                `<div>
+                     Lucknow — ₹2.35M revenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_662ab91e69599e6f995cae486a3135d2 = L.circleMarker(
+                [25.5941, 85.1376],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_f186b879c0235e846487a529058b02bf);
+        
+    
+        var popup_952a4fabe79e10d16d7dfe73b7851d6d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c6cac141f6bd3fa7993d27f5462c0f4 = $(`<div id="html_4c6cac141f6bd3fa7993d27f5462c0f4" style="width: 100.0%; height: 100.0%;"><b>Patna, Bihar</b><br>Postal Code: 800001<br>Users: 420<br>Orders: 95<br>Revenue: ₹1,250,000<br>Revenue/User: ₹2,976<br>Underserved Score: 488.00</div>`)[0];
+                popup_952a4fabe79e10d16d7dfe73b7851d6d.setContent(html_4c6cac141f6bd3fa7993d27f5462c0f4);
+            
+        
+
+        circle_marker_662ab91e69599e6f995cae486a3135d2.bindPopup(popup_952a4fabe79e10d16d7dfe73b7851d6d)
+        ;
+
+        
+    
+    
+            circle_marker_662ab91e69599e6f995cae486a3135d2.bindTooltip(
+                `<div>
+                     Patna — ₹1.25M revenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_f186b879c0235e846487a529058b02bf.addTo(map_66bade7b71d34cd0d3da1167e718296d);
+        
+    
+            var marker_11df159b9883dae478d5bf18222aa92e = L.marker(
+                [25.5941, 85.1376],
+                {
+}
+            ).addTo(map_66bade7b71d34cd0d3da1167e718296d);
+        
+    
+            var icon_9ddb61751292ea2d0f872577fccdda18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77be14f350b0fb7ff0f28baa49c22a5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_073143645e37be1de26166039da1e0ff = $(`<div id="html_073143645e37be1de26166039da1e0ff" style="width: 100.0%; height: 100.0%;"><b>High-potential underserved region</b><br>Patna, Bihar<br>Score: 488.00</div>`)[0];
+                popup_77be14f350b0fb7ff0f28baa49c22a5c.setContent(html_073143645e37be1de26166039da1e0ff);
+            
+        
+
+        marker_11df159b9883dae478d5bf18222aa92e.bindPopup(popup_77be14f350b0fb7ff0f28baa49c22a5c)
+        ;
+
+        
+    
+    
+            marker_11df159b9883dae478d5bf18222aa92e.bindTooltip(
+                `<div>
+                     Top opportunity: Patna, Bihar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_11df159b9883dae478d5bf18222aa92e.setIcon(icon_9ddb61751292ea2d0f872577fccdda18);
+            
+    
+            var marker_1a03cb238bde494fac377bd4617b99c3 = L.marker(
+                [21.0, 79.0882],
+                {
+}
+            ).addTo(map_66bade7b71d34cd0d3da1167e718296d);
+        
+    
+            var icon_5a481a7270fa44a2ce77e724dd650bd2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd22134ddb10c8577af3e3952417850a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ae3351829aacf25515641e4a85aaae5 = $(`<div id="html_1ae3351829aacf25515641e4a85aaae5" style="width: 100.0%; height: 100.0%;"><b>High-potential underserved region</b><br>Nagpur, Maharashtra<br>Score: 481.08</div>`)[0];
+                popup_bd22134ddb10c8577af3e3952417850a.setContent(html_1ae3351829aacf25515641e4a85aaae5);
+            
+        
+
+        marker_1a03cb238bde494fac377bd4617b99c3.bindPopup(popup_bd22134ddb10c8577af3e3952417850a)
+        ;
+
+        
+    
+    
+            marker_1a03cb238bde494fac377bd4617b99c3.bindTooltip(
+                `<div>
+                     Top opportunity: Nagpur, Maharashtra
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1a03cb238bde494fac377bd4617b99c3.setIcon(icon_5a481a7270fa44a2ce77e724dd650bd2);
+            
+    
+            var marker_302ec5591f7df69025666ed4d608468a = L.marker(
+                [26.8467, 80.9462],
+                {
+}
+            ).addTo(map_66bade7b71d34cd0d3da1167e718296d);
+        
+    
+            var icon_2b2c8ae9a4140969562b64d01421538d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c686e181a51db416be6261d9ef9d061e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a6d44474a87eb0f07dce07e7a1b13a9 = $(`<div id="html_5a6d44474a87eb0f07dce07e7a1b13a9" style="width: 100.0%; height: 100.0%;"><b>High-potential underserved region</b><br>Lucknow, Uttar Pradesh<br>Score: 451.06</div>`)[0];
+                popup_c686e181a51db416be6261d9ef9d061e.setContent(html_5a6d44474a87eb0f07dce07e7a1b13a9);
+            
+        
+
+        marker_302ec5591f7df69025666ed4d608468a.bindPopup(popup_c686e181a51db416be6261d9ef9d061e)
+        ;
+
+        
+    
+    
+            marker_302ec5591f7df69025666ed4d608468a.bindTooltip(
+                `<div>
+                     Top opportunity: Lucknow, Uttar Pradesh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_302ec5591f7df69025666ed4d608468a.setIcon(icon_2b2c8ae9a4140969562b64d01421538d);
+            
+    
+            var layer_control_f8b119e5ec37c2b3d5560713cb6e6247_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_2c4494ff90d5ebb0b7fca6f2f7c251b7,
+                },
+                overlays :  {
+                    "City locations" : marker_cluster_f186b879c0235e846487a529058b02bf,
+                },
+            };
+            let layer_control_f8b119e5ec37c2b3d5560713cb6e6247 = L.control.layers(
+                layer_control_f8b119e5ec37c2b3d5560713cb6e6247_layers.base_layers,
+                layer_control_f8b119e5ec37c2b3d5560713cb6e6247_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_66bade7b71d34cd0d3da1167e718296d);
+
+        
+</script>
+</html>
