@@ -1,0 +1,2 @@
+Control_N,Control_Conversions,Control_Conversion_Rate,Variant_N,Variant_Conversions,Variant_Conversion_Rate,Absolute_Lift,Relative_Lift,Z_Statistic,P_Value,CI_95_Low,CI_95_High,Cohen_h,Chi_Square,Chi_Square_P_Value,Required_N_Per_Arm_Approx_80pct
+5000,450,0.09,5000,550,0.11,0.020000000000000004,0.22222222222222227,3.3333333333333335,0.0008581206663935692,0.008246751121831859,0.03175324887816815,0.0667452015298663,11.11111111111111,0.0008581206663936758,4321
